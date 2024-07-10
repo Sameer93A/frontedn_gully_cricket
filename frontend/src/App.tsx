@@ -22,7 +22,10 @@ function App() {
     };
 
     try {
-      const randomPlayer = await axios.post(process.env.BACKEND_URL, data);
+      const randomPlayer = await axios.post(
+        "https://my-app.sameer937655.workers.dev/api/v1/captain",
+        data
+      );
       setRandomPlayerData(randomPlayer.data);
     } catch (error) {
       console.error("Error fetching random player data:", error);
