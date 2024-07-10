@@ -22,10 +22,7 @@ function App() {
     };
 
     try {
-      const randomPlayer = await axios.post(
-        "http://localhost:44065/api/v1/captain",
-        data
-      );
+      const randomPlayer = await axios.post(process.env.BACKEND_URL, data);
       setRandomPlayerData(randomPlayer.data);
     } catch (error) {
       console.error("Error fetching random player data:", error);
