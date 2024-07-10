@@ -32,11 +32,7 @@ function App() {
     }
   }
   return (
-<<<<<<< HEAD
     <div className="">
-=======
-    <div>
->>>>>>> 79ea8880fd0af49e859c43b7208b9a9094462ca0
       <h1 className="flex justify-center text-xl pb-4 font-bold">
         Randomize Your Team
       </h1>
@@ -59,11 +55,7 @@ function App() {
           setPlayerName(e.target.value);
         }}
         Name="Player Name"
-<<<<<<< HEAD
         placeholder="eg :- sohan,mohan"
-=======
-        placeholder="Enter player Name"
->>>>>>> 79ea8880fd0af49e859c43b7208b9a9094462ca0
       ></PlayerBox>
       <Submit onClick={handleSubmit}></Submit>
       {randomPlayerData && <TableRender randomPlayerData={randomPlayerData} />}
