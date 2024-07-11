@@ -10,7 +10,7 @@ export const InputBox = ({ Name, placeholder, onChange }: Inputypes) => {
   return (
     <div className="flex justify-center">
       <div>
-        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">
+        <label className="block mb-2 text-lg font-medium text-gray-900 dark:text-black">
           {Name}
         </label>
         <input

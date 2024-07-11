@@ -12,7 +12,7 @@ export const PlayerBox: React.FC<PlayerBoxProps> = ({
   return (
     <div className="flex justify-center">
       <div>
-        <label className="block mb-2 text-sm font-medium text-gray-900 ">
+        <label className="block mb-2 text-lg font-medium text-gray-900 ">
           {Name}
         </label>
         <textarea

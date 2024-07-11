@@ -12,7 +12,7 @@ export const TableRender: React.FC<TableRenderProps> = ({
   randomPlayerData,
 }) => {
   return (
-    <div className="mt-2">
+    <div className="">
       <div className="flex justify-center">
         <div className="relative overflow-x-auto">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500">

@@ -32,8 +32,8 @@ function App() {
     }
   }
   return (
-    <div className="">
-      <h1 className="flex justify-center text-xl pb-4 font-bold">
+    <div className="flex justify-center flex-col h-screen">
+      <h1 className="flex justify-center text-3xl pb-4 font-bold">
         Randomize Your Team
       </h1>
       <InputBox
@@ -54,7 +54,7 @@ function App() {
         onChange={(e) => {
           setPlayerName(e.target.value);
         }}
-        Name="Player Name"
+        Name="Players Name"
         placeholder="eg :- sohan,mohan"
       ></PlayerBox>
       <Submit onClick={handleSubmit}></Submit>
