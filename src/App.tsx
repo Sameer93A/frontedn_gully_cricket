@@ -5,6 +5,8 @@ import { PlayerBox } from "./components/PlayerBox";
 import { Submit } from "./components/Submit";
 import axios from "axios";
 import { TableRender } from "./components/TableRender";
+import { Lodaing } from "./components/Loading";
+import { Toss } from "./components/Toss";
 
 function App() {
   const [firstCaptainName, setFirstCaptainName] = useState("");
@@ -59,6 +61,7 @@ function App() {
       ></PlayerBox>
       <Submit onClick={handleSubmit}></Submit>
       {randomPlayerData && <TableRender randomPlayerData={randomPlayerData} />}
+      <Toss />
     </div>
   );
 }
