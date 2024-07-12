@@ -7,7 +7,7 @@ export const Toss = () => {
     if (Math.random() < 0.5) {
       setResult(toss[Math.floor(Math.random() * toss.length)]);
     } else {
-      setResult("run again"); // or any other default value
+      setResult("Tail"); // or any other default value
     }
   };
 
